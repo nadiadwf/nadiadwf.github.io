@@ -1,0 +1,263 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Lato:300,400,700');
+
+/*
+    font-family: 'Lato', sans-serif;
+    font-family: 'Allura', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* CSS Header */
+
+header {
+    background: url(../images/bgheadervarietas.png) no-repeat;
+    background-position-y: -80px;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.header {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.logo {
+    padding-top: 10px;
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Allura', cursive;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.nav-bar {
+    margin-top: 18px;
+    display: block;
+    float: right;
+}
+
+.nav-bar li {
+    list-style: none;
+    float: left;
+}
+
+.nav-bar a {
+    padding: 8px 12px;
+    color: #ffffff;
+    display: block;
+    font-size: 18px;
+}
+
+.nav-bar a:hover {
+    border-bottom: 1px solid white;
+}
+
+.tag-line h1 {
+    padding: 150px 230px 150px;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+.img-area {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-img {
+    padding: 0 20px 20px;
+}
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+.text{
+  margin-bottom: 150px;
+}
+
+.text .box-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: auto;
+}
+.text .box-text{
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+
+
+
+/* CSS Footer */
+
+footer {
+    background-color: #479698;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer {
+    overflow: hidden;
+}
+
+.col-one-fourth {
+    width: 25%;
+    float: left;
+}
+
+.col-one-fourth h3 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.col-one-fourth p {
+    padding-right: 30px;
+    line-height: 2;
+}
+
+.col-one-fourth h2 {
+    font-family: 'Allura', cursive;
+    font-size: 34px;
+}
+
+.phone-num {
+    font-size: 20px;
+}
+
+.social-icon a {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* CSS Media Query */
+
+@media(max-width: 1099px) {
+    .container {
+        margin: 0 20px;
+    }
+}
+
+@media(max-width: 880px) {
+    /* CSS Header */
+    .tag-line h1 {
+        padding: 50px 130px 90px;
+    }
+    /* CSS Services */
+    .our-services {
+        width: 100%;
+        float: none;
+    }
+    .img {
+        width: 100%;
+        margin-top: 50px;
+        float: none;
+        text-align: center;
+    }
+    .img img {
+        float: none;
+    }
+    /* CSS Footer */
+    .col-one-fourth {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 680px) {
+    /* CSS Header */
+    .mobile-nav {
+        display: inherit;
+        border: 1px solid #fff;
+        width: 40px;
+        height: 35px;
+        float: right;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .mobile-nav i {
+        display: block;
+        width: 32px;
+        height: 5px;
+        background: #ff941a;
+        margin: 5px auto;
+    }
+    .nav-bar {
+        display: none;
+        width: 50%;
+        margin-top: 4px;
+        top: 50px;
+        right: 10px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .nav-bar li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid #333;
+    }
+    .nav-bar li:last-of-type {
+        border-bottom: none;
+    }
+    .nav-bar a {
+        display: block;
+        padding: 10px 12px;
+    }
+    .tag-line h1 {
+        padding: 30px 20px 50px;
+    }
+    /* CSS Footer */
+    .col-one-fourth {
+        width: 100%;
+        float: none;
+    }
+}
