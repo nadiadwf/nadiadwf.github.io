@@ -9,8 +9,7 @@ $(document).ready(function(){
 		if($(window).width() >= 680){
 			nav.show();
 		}
-		else
-		{
+		else{
 			nav.hide();
 		}
 	});
