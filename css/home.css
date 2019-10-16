@@ -33,7 +33,7 @@ margin: 0 auto;
 /* CSS Header */
 
 header {
-background: url(../images/bgheader.png) no-repeat;
+background: url(images/bgheader.png) no-repeat;
 background-position-y: -150px;
 background-size: cover;
 height: 500px;
@@ -137,6 +137,50 @@ height: 400px;
 object-fit: cover;
 object-position: 100% 4%;
 }
+
+/* CSS varietas */
+
+.img-area {
+    margin-top: 0px;
+    margin-bottom: 200px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    float: left;
+
+
+}
+
+.single-img {
+    padding: 0 20px 20px;
+}
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+.text{
+  margin-bottom: 150px;
+  margin-left: 400px;
+
+}
+
+.text .box-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+
+}
+.text .box-text{
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+}
 /* CSS Footer */
 
 footer {
@@ -189,42 +233,6 @@ margin-right: 10px;
 .about {
     margin-top: 50px;
 }
-.img-area {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.single-img {
-    padding: 0 20px 20px;
-}
-
-img:hover {
-    opacity: .5;
-    transition: .9s;
-}
-.text{
-  margin-bottom: 150px;
-}
-
-.text .box-text{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
-  height: auto;
-}
-.text .box-text{
-  font-size: 18px;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-
 @media(max-width: 880px) {
     /* CSS Header */
     .tag-line h1 {
@@ -295,9 +303,11 @@ img:hover {
     .about {
         margin-top: -100px;
     }
+
     /* CSS Footer */
     .col-one-fourth {
         width: 100%;
         float: none;
     }
+
 }
