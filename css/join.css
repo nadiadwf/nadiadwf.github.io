@@ -56,19 +56,10 @@ body{
 }
 
 .msg textarea{
-  height: 212px;
+  height: 155px;
 }
 
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #c5ecfd;
-}
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #c5ecfd;
-}
-:-ms-input-placeholder {
-  /* IE 10+ */
+ ::-webkit-input-placeholder {
   color: #c5ecfd;
 }
 
