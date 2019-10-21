@@ -46,12 +46,10 @@ h1{ margin: 0;
     color: #fff;
     font-size: 16px;
 }
-<<<<<<< HEAD
+
 .login-box button
 {
-=======
-.login-box button {
->>>>>>> b91af5e1296d9841bb2b6cc7b91128b38e59edc7
+
     border: none;
     outline: none;
     height: 40px;
@@ -59,7 +57,7 @@ h1{ margin: 0;
     color: #fff;
     font-size: 15px;
     border-radius: 20px;
-    
+
 }
 .login-box button:hover
 {
