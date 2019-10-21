@@ -21,14 +21,7 @@ body{
     padding: 50px 30px;
     border-radius: 10px;
 }
-/* .avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-} */
+
 h1{ margin: 0;
     padding: 0 0 30px;
     text-align: center;
@@ -53,8 +46,12 @@ h1{ margin: 0;
     color: #fff;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .login-box button
 {
+=======
+.login-box button {
+>>>>>>> b91af5e1296d9841bb2b6cc7b91128b38e59edc7
     border: none;
     outline: none;
     height: 40px;
@@ -70,13 +67,3 @@ h1{ margin: 0;
     background: #fff;
     color: #000;
 }
-
-/* .login-box a{
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-}
-.login-box a:hover
-{
-    color: #39dc79;
-} */
