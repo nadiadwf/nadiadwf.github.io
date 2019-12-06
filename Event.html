@@ -49,9 +49,28 @@
             <div class="img">
                 <img src="images/cactus.jpg" alt="">
             </div>
+            <a href="#" id="open_modal" class="btn">Read More</a>
+
         </div>
     </section>
     <!-- end About -->
+    //modal
+        <div class="modal" id="id_modal">
+          <form class="modal-content" action="#">
+            <div class="modal-top">
+              <span class="modal-close">X</span>
+              <h3>Tambah Data</h3>
+            </div>
+
+            <div class="modal-middle">
+              //isi form
+            </div>
+
+            <div class="modal-bottom">
+              <button type="button" id="btn_submit">Simpan</button>
+            </div>
+          </form>
+        </div>
 
     <footer>
         <div class="container footer">
@@ -88,7 +107,27 @@
 
 
 
-    <script src="js/myscript.js" type="text/javascript"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        //buka nutup modal
+        $("#open_modal").click(function(event) {
+          event.preventDefault();
+            modalShow();
+
+            $(".modal-close").click(function(event) {
+              modalHide();
+            });
+
+            window.onclick = function(event) {
+              var modal = document.getElementById('id_modal');
+              if(event.target == modal){
+                modalHide();
+              }
+            };
+
+          });
+        </script>    
 </body>
 
 </html>

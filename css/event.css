@@ -58,6 +58,10 @@ body{
   text-transform: uppercase;
 }
 
+.input-fields h1{
+  color: #fff;
+  font-size: 10px;
+}
  ::-webkit-input-placeholder {
   color: #c5ecfd;
 }
