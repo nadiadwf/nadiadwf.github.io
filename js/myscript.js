@@ -16,6 +16,7 @@ $(document).ready(function(){
 	});
 });
 
+//Menampilkan preview dan info gambar
 $.fn.uploadGambar = function () { //extending jquery
 	this.change(function(event) {
     	if(this.files.length > 0){

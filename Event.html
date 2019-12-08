@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>About</title>
+    <title>Event</title>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link href="css/HalEvent.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/event.css">
 </head>
 
 <body>
@@ -23,11 +25,11 @@
                 </div>
                 <nav class="nav-bar">
                     <ul>
-                        <li><a href="#">Beranda</a></li>
+                        <li><a href="Home.html">Beranda</a></li>
                         <li><a href="about.html">Tentang Kami</a></li>
                         <li><a href="treatment.html">Perawatan</a></li>
                         <li><a href="varietas.html">Varietas</a></li>
-                        <li><a href="">Event</a></li>
+                        <li><a href="Event.html">Event</a></li>
 
                     </ul>
                 </nav>
@@ -44,33 +46,47 @@
             <div class="about-detail">
                 <h2>Penanaman Kaktus Massal</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- <a href="#" class="btn">Read More</a> -->
+            <a href="#" id="open_modal" class="btn">Tambah Event</a>
             </div>
+
             <div class="img">
                 <img src="images/cactus.jpg" alt="">
             </div>
-            <a href="#" id="open_modal" class="btn">Read More</a>
 
         </div>
     </section>
     <!-- end About -->
-    //modal
-        <div class="modal" id="id_modal">
-          <form class="modal-content" action="#">
-            <div class="modal-top">
-              <span class="modal-close">X</span>
-              <h3>Tambah Data</h3>
-            </div>
 
-            <div class="modal-middle">
-              //isi form
-            </div>
-
-            <div class="modal-bottom">
-              <button type="button" id="btn_submit">Simpan</button>
-            </div>
-          </form>
+    <!-- modal -->
+    <div class="modal" id="id_modal">
+      <form class="modal-content" action="#">
+        <div class="modal-top">
+          <span class="modal-close">X</span>
+          <h3>Tambah Data</h3>
         </div>
+
+        <div class="modal-middle">
+            <div class="contact-form">
+                <div class="input-fields">
+                  <form>
+                      
+                  <input type="text" class="input" placeholder="Nama event" required>
+                  <input type="text" class="input" placeholder="Tanggal" required>
+                  <input type="text" class="input" placeholder="Tempat" required>
+                  <input type="text" class="input" placeholder="Deskripsi" required>
+                        <form method="post"  enctype="multipart/form-data" id="uploadForm" style="margin-bottom: 30px;">
+                        <input style="margin-bottom: 30px;" type="file" name="file" id="file" />
+                            <div id="gambar_wraper" style="display: none;">
+                                <img src="#" id="avatar_img">
+                            </div>
+                        </form>
+                        <button type="submit" name="submit" value="Masuk" formaction="Home.html">Submit</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </form>
+    </div>
 
     <footer>
         <div class="container footer">
@@ -106,28 +122,27 @@
 
 
 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    //buka nutup modal
+    $("#open_modal").click(function(event) {
+      event.preventDefault();
+        modalShow();
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/myscript.js" type="text/javascript"></script>
-        <script type="text/javascript">
-        //buka nutup modal
-        $("#open_modal").click(function(event) {
-          event.preventDefault();
-            modalShow();
+        $(".modal-close").click(function(event) {
+          modalHide();
+        });
 
-            $(".modal-close").click(function(event) {
-              modalHide();
-            });
+        window.onclick = function(event) {
+          var modal = document.getElementById('id_modal');
+          if(event.target == modal){
+            modalHide();
+          }
+        };
 
-            window.onclick = function(event) {
-              var modal = document.getElementById('id_modal');
-              if(event.target == modal){
-                modalHide();
-              }
-            };
-
-          });
-        </script>    
+      });
+    </script>
 </body>
 
 </html>

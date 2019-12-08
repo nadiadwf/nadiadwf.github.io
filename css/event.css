@@ -8,11 +8,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body{
-  background-size: cover;
-  height: 100vh;
-  background-image: url(../images/kaktus.jpg);
-}
 
 .wrapper{
   position: absolute;
@@ -33,6 +28,7 @@ body{
 }
 
 .input-fields{
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-right: 4%;
