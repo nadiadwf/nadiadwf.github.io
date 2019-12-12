@@ -2,6 +2,7 @@
 <head>
     <title> Login </title>
     <link href="css/login.css" rel="stylesheet" type="text/css" >
+    <link href="css/modal.css" rel="stylesheet" type="text/css" >
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 </head>
@@ -18,5 +19,30 @@
             </form>
         </div>
 
+
+        <!-- <div class="error-modal" id="error_modal">
+    			<div class="error-modal-content">
+    				<div class="modal-top">
+    					<h3>Peringatan</h3>
+    				</div>
+
+    				<div class="modal-middle">
+    					<b></b>
+    				</div>
+
+    				<div class="modal-bottom">
+    					<button class="btn btn_utama" id="close_error_form">Close</button>
+    				</div>
+    			</div>
+    		</div> -->
+
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+      	<script src="js/myscript.js"></script>
+
+      	<script type="text/javascript">
+
+      		$("form").validasiLogin();
+      	</script>
     </body>
 </html>
