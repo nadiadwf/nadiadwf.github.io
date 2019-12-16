@@ -22,6 +22,7 @@ font-size: 16px;
 font-family: 'Lato', sans-serif;
 }
 
+
 .testimonials{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -92,6 +93,17 @@ transition: 0.5s;
 
 a {
 text-decoration: none;
+}
+
+.button a{
+  margin-top: 40px;
+  color: #fff;
+  font-weight: bold;
+  background: #61BEC1;
+  border-radius: 4px;
+  display: table;
+  padding: 15px 40px;
+  border-radius: 50px;
 }
 
 .container {
