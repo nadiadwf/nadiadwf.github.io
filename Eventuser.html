@@ -47,7 +47,7 @@
             <div class="about-detail">
                 <h2>Penanaman Kaktus Massal</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#" id="open_modal" class="btn">Join Event</a>
+                <a href="#" id="open_modal" class="btn">Join Event</a>
             </div>
 
             <div class="img">
@@ -63,29 +63,27 @@
 
 
     <div class="modal" id="id_modal">
-      <form class="modal-content" action="#">
-        <div class="modal-top">
-          <span class="modal-close">X</span>
-          <h3>Join Event</h3>
-        </div>
+        <form class="modal-content" action="#">
+            <div class="modal-top">
+                <span class="modal-close">X</span>
+                <h3>Join Event</h3>
+            </div>
 
 
-        <div class="modal-middle">
-            <div class="contact-form">
-                <div class="input-fields">
-                  <form>
-                  <input type="text" class="input" placeholder="Nama" required>
-                  <input type="text" class="input" placeholder="No hp" required>
-                  <input type="text" class="input" placeholder="Email" required>
-
-                            </div>
+            <div class="modal-middle">
+                <div class="contact-form">
+                    <div class="input-fields">
+                        <form>
+                            <input type="text" class="input" placeholder="Nama" required>
+                            <input type="text" class="input" placeholder="No hp" required>
+                            <input type="text" class="input" placeholder="Email" required>
                         </form>
                         <button type="submit" name="submit" value="Masuk" formaction="Home.html">Join Event</button>
-                  </form>
+                    </div>
                 </div>
-              </div>
-        </div>
-      </form>
+            </div>
+        </form>
+    </div>
     </div>
 
     <footer>
@@ -125,23 +123,23 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/myscript.js" type="text/javascript"></script>
     <script type="text/javascript">
-    //buka nutup modal
-    $("#open_modal").click(function(event) {
-      event.preventDefault();
-        modalShow();
+        //buka nutup modal
+        $("#open_modal").click(function(event) {
+            event.preventDefault();
+            modalShow();
 
-        $(".modal-close").click(function(event) {
-          modalHide();
+            $(".modal-close").click(function(event) {
+                modalHide();
+            });
+
+            window.onclick = function(event) {
+                var modal = document.getElementById('id_modal');
+                if (event.target == modal) {
+                    modalHide();
+                }
+            };
+
         });
-
-        window.onclick = function(event) {
-          var modal = document.getElementById('id_modal');
-          if(event.target == modal){
-            modalHide();
-          }
-        };
-
-      });
     </script>
 </body>
 
